@@ -1,0 +1,14 @@
+D:\repos\TestNetCoreApiLayers\TestNetCore.Bussines\bin\Debug\netcoreapp3.1\TestNetCore.Bussines.deps.json
+D:\repos\TestNetCoreApiLayers\TestNetCore.Bussines\bin\Debug\netcoreapp3.1\TestNetCore.Bussines.dll
+D:\repos\TestNetCoreApiLayers\TestNetCore.Bussines\bin\Debug\netcoreapp3.1\TestNetCore.Bussines.pdb
+D:\repos\TestNetCoreApiLayers\TestNetCore.Bussines\bin\Debug\netcoreapp3.1\TestNetCore.Core.dll
+D:\repos\TestNetCoreApiLayers\TestNetCore.Bussines\bin\Debug\netcoreapp3.1\TestNetCore.Dal.dll
+D:\repos\TestNetCoreApiLayers\TestNetCore.Bussines\bin\Debug\netcoreapp3.1\TestNetCore.Dal.pdb
+D:\repos\TestNetCoreApiLayers\TestNetCore.Bussines\bin\Debug\netcoreapp3.1\TestNetCore.Core.pdb
+D:\repos\TestNetCoreApiLayers\TestNetCore.Bussines\obj\Debug\netcoreapp3.1\TestNetCore.Bussines.csprojAssemblyReference.cache
+D:\repos\TestNetCoreApiLayers\TestNetCore.Bussines\obj\Debug\netcoreapp3.1\TestNetCore.Bussines.AssemblyInfoInputs.cache
+D:\repos\TestNetCoreApiLayers\TestNetCore.Bussines\obj\Debug\netcoreapp3.1\TestNetCore.Bussines.AssemblyInfo.cs
+D:\repos\TestNetCoreApiLayers\TestNetCore.Bussines\obj\Debug\netcoreapp3.1\TestNetCore.Bussines.csproj.CoreCompileInputs.cache
+D:\repos\TestNetCoreApiLayers\TestNetCore.Bussines\obj\Debug\netcoreapp3.1\TestNetCore.Bussines.csproj.CopyComplete
+D:\repos\TestNetCoreApiLayers\TestNetCore.Bussines\obj\Debug\netcoreapp3.1\TestNetCore.Bussines.dll
+D:\repos\TestNetCoreApiLayers\TestNetCore.Bussines\obj\Debug\netcoreapp3.1\TestNetCore.Bussines.pdb

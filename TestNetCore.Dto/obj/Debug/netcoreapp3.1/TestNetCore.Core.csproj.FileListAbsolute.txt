@@ -1,0 +1,9 @@
+D:\repos\TestNetCoreApiLayers\TestNetCore.Dto\bin\Debug\netcoreapp3.1\TestNetCore.Core.deps.json
+D:\repos\TestNetCoreApiLayers\TestNetCore.Dto\bin\Debug\netcoreapp3.1\TestNetCore.Core.dll
+D:\repos\TestNetCoreApiLayers\TestNetCore.Dto\bin\Debug\netcoreapp3.1\TestNetCore.Core.pdb
+D:\repos\TestNetCoreApiLayers\TestNetCore.Dto\obj\Debug\netcoreapp3.1\TestNetCore.Core.AssemblyInfoInputs.cache
+D:\repos\TestNetCoreApiLayers\TestNetCore.Dto\obj\Debug\netcoreapp3.1\TestNetCore.Core.AssemblyInfo.cs
+D:\repos\TestNetCoreApiLayers\TestNetCore.Dto\obj\Debug\netcoreapp3.1\TestNetCore.Core.csproj.CoreCompileInputs.cache
+D:\repos\TestNetCoreApiLayers\TestNetCore.Dto\obj\Debug\netcoreapp3.1\TestNetCore.Core.dll
+D:\repos\TestNetCoreApiLayers\TestNetCore.Dto\obj\Debug\netcoreapp3.1\TestNetCore.Core.pdb
+D:\repos\TestNetCoreApiLayers\TestNetCore.Dto\obj\Debug\netcoreapp3.1\TestNetCore.Core.csprojAssemblyReference.cache
