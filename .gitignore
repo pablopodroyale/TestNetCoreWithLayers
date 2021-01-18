@@ -450,3 +450,16 @@ $RECYCLE.BIN/
 .vs/TestNetCoreApiLayers/v16/.suo
 TestNetCore.Bussines/bin/Debug/netcoreapp3.1/TestNetCore.Bussines.dll
 TestNetCore.Bussines/bin/Debug/netcoreapp3.1/TestNetCore.Bussines.pdb
+.vs/TestNetCoreApiLayers/v16/.suo
+TestNetCore.Bussines/bin/Debug/netcoreapp3.1/TestNetCore.Bussines.dll
+TestNetCore.Bussines/bin/Debug/netcoreapp3.1/TestNetCore.Bussines.pdb
+TestNetCore.Bussines/obj/Debug/netcoreapp3.1/TestNetCore.Bussines.csprojAssemblyReference.cache
+TestNetCore.Bussines/obj/Debug/netcoreapp3.1/TestNetCore.Bussines.dll
+TestNetCore.Bussines/obj/Debug/netcoreapp3.1/TestNetCore.Bussines.pdb
+TestNetCoreApiLayers/bin/Debug/netcoreapp3.1/TestNetCore.Api.dll
+TestNetCoreApiLayers/bin/Debug/netcoreapp3.1/TestNetCore.Api.pdb
+TestNetCoreApiLayers/bin/Debug/netcoreapp3.1/TestNetCore.Bussines.dll
+TestNetCoreApiLayers/bin/Debug/netcoreapp3.1/TestNetCore.Bussines.pdb
+TestNetCoreApiLayers/obj/Debug/netcoreapp3.1/TestNetCore.Api.csprojAssemblyReference.cache
+TestNetCoreApiLayers/obj/Debug/netcoreapp3.1/TestNetCore.Api.dll
+TestNetCoreApiLayers/obj/Debug/netcoreapp3.1/TestNetCore.Api.pdb
