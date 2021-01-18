@@ -13,6 +13,8 @@ namespace TestNetCore.Core.Model.Enum
         [Description("Usuario incorrecto")]
         ERROR_USERNAME_INVALID = 2,
         [Description("Password incorrecto")]
-        ERROR_PASSWORD_INVALID = 3
+        ERROR_PASSWORD_INVALID = 3,
+        [Description("Usuario inválido")]
+        USER_INVALID = 4
     }
 }

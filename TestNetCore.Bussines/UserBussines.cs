@@ -78,14 +78,15 @@ namespace TestNetCore.Bussines
                     var checkPass = await this.userApplicationDal.CheckPasswordAsync(loginUserDto);
                     if (checkPass)
                     {
+                        string secretKey = _applicationSettings.Jwt_Secret;
                         var tokenDescriptor = new SecurityTokenDescriptor()
                         {
                             Subject = new System.Security.Claims.ClaimsIdentity(new Claim[]
                            {
-                               new Claim("UserID", result.Id)
+                               new Claim("UserID", result.Id.ToString())
                            }),
                             Expires = DateTime.UtcNow.AddMinutes(5),
-                            SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_applicationSettings.Jwt_Secret)), SecurityAlgorithms.HmacSha256Signature)
+                            SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey)), SecurityAlgorithms.HmacSha256Signature)
                         };
                         var tokenHandler = new JwtSecurityTokenHandler();
                         var securityToken = tokenHandler.CreateToken(tokenDescriptor);
@@ -94,11 +95,7 @@ namespace TestNetCore.Bussines
                     }
                     else
                     {
-                        Error error = new Error()
-                        {
-                            Code = Errors.ERROR_PASSWORD_INVALID.ToString(),
-                            Description = Errors.ERROR_PASSWORD_INVALID.GetDescription()
-                        };
+                        Error error = new Error(Errors.ERROR_PASSWORD_INVALID);
                         errors.Add(error);
                         customException = new CustomException(errors);
                         throw customException;
@@ -107,15 +104,10 @@ namespace TestNetCore.Bussines
                 }
                 else
                 {
-                    Error error = new Error()
-                    {
-                        Code = Errors.ERROR_USERNAME_INVALID.ToString(),
-                        Description = Errors.ERROR_USERNAME_INVALID.GetDescription()
-                    };
+                    Error error = new Error(Errors.ERROR_USERNAME_INVALID);
                     errors.Add(error);
                     customException = new CustomException(errors);
                     throw customException;
-
                 }
             }
             catch (CustomException e)
@@ -164,6 +156,38 @@ namespace TestNetCore.Bussines
         public async Task UpdateUser(ApplicationUserDto userToUpdate, ApplicationUserDto user)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task<ApplicationUserDto> FindByIdAsync(string userId)
+        {
+            List<Error> errors = new List<Error>();
+            CustomException customException;
+            try
+            {
+                ApplicationUserDto result = await this.userApplicationDal.FindByIdAsync(userId);
+                if (result != null)
+                {
+                    return result;
+                }
+                else
+                {
+                    Error error = new Error(Errors.USER_INVALID);
+                    errors.Add(error);
+                    customException = new CustomException(errors);
+                    throw customException;
+
+                }
+            }
+            catch (CustomException e)
+            {
+                throw e;
+            }
+            catch (Exception e)
+            {
+                errors.Add(ErrorHelper.GetError());
+                customException = new CustomException(errors);
+                throw customException;
+            }
         }
     }
 }

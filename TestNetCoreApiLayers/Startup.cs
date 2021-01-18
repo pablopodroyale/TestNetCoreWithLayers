@@ -50,9 +50,9 @@ namespace TestNetCoreApiLayers
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var key =  Encoding.UTF8.GetBytes(Configuration["ApplicattionSettings:Jwt_Secret"]);
+            var key = Encoding.UTF8.GetBytes(Configuration["ApplicattionSettings:Jwt_Secret"]);
 
-            services.Configure<ApplicationSettings>(Configuration.GetSection("ApplicationSettings"));
+            services.Configure<TestNetCore.Core.Shared.ApplicattionSettings>(Configuration.GetSection("ApplicattionSettings"));
             services.AddControllers();
             services.AddTransient<IUserBussines, UserBussines>();
             services.AddTransient<IUserApplicattionDal, UserApplicattionDal>();
@@ -80,7 +80,8 @@ namespace TestNetCoreApiLayers
                     x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
                     x.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
                 }
-            ).AddJwtBearer(x => {
+            ).AddJwtBearer(x =>
+            {
                 x.RequireHttpsMetadata = false;
                 x.SaveToken = false;
                 x.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters()
@@ -119,9 +120,10 @@ namespace TestNetCoreApiLayers
 
             app.UseRouting();
 
+            app.UseAuthentication();
+
             app.UseAuthorization();
 
-            app.UseAuthentication();
 
             app.UseMiddleware<SerilogExtension>();
 

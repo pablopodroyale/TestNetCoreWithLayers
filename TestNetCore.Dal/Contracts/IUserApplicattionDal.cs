@@ -15,5 +15,7 @@ namespace TestNetCore.Dal.Contracts
         Task<ApplicationUserDto> FindByNamesyncAsync(LoginUserDto loginUserDto);
 
         Task<bool> CheckPasswordAsync(LoginUserDto loginUserDto);
+
+        Task<ApplicationUserDto> FindByIdAsync(string userId);
     }
 }

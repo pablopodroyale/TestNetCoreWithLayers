@@ -16,5 +16,6 @@ namespace TestNetCore.Core.Bussines
         Task DeleteUser(ApplicationUserDto music);
         Task<bool> Register(CreateUserDto createUserDto);
         Task<string> Login(LoginUserDto loginUserDto);
+        Task<ApplicationUserDto> FindByIdAsync(string userId);
     }
 }

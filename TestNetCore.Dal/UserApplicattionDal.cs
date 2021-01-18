@@ -69,5 +69,16 @@ namespace TestNetCore.Dal
             }
             return ret;
         }
+
+        public async Task<ApplicationUserDto> FindByIdAsync(string userId)
+        {
+            var result = await _userManager.FindByIdAsync(userId);
+            ApplicationUserDto ret = null;
+            if (result != null)
+            {
+                ret = mapper.Map<ApplicationUser, ApplicationUserDto>(result);
+            }
+            return ret;
+        }
     }
 }
