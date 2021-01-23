@@ -34,3 +34,4 @@ bld/
 # NUNIT
 *.VisualState.xml
 TestResult.xml
+.vs/TestNetCoreApiLayers/v16/.suo
